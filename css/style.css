@@ -13,14 +13,20 @@ body{
 
 .fizzBuzz{
     background-color: red;
+    color: red;
+    transition: 1s color;
 }
 
 .fizz{
     background-color: #0BD6A1;
+    color: #0BD6A1;
+    transition: 1s color;
 }
 
 .buzz{
     background-color: #FFD166;
+    color: #FFD166;
+    transition: 1s color;
 }
 
 h1{
@@ -47,5 +53,81 @@ h1{
     font-size: 30px;
     line-height: 160px;
     text-align: center;
+    position: relative;
 }
 
+/*------------
+    ANIMATION
+---------------*/
+
+li.fizzBuzz::after{
+    background-color: red;
+    content: "FizzBuzz";
+    color: #000;
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 1;
+    transition: 2s opacity;
+}
+
+li.fizz::after{
+    background-color: #0BD6A1;
+    content: "Fizz";
+    color: #000;
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 1;
+    transition: 2s opacity;
+}
+
+li.buzz::after{
+    background-color: #FFD166;
+    content: "Buzz";
+    color: #000;
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 1;
+    transition: 2s opacity;
+}
+
+li.fizzBuzz:hover::after{
+    opacity: 0;
+}
+
+li.fizz:hover::after{
+    opacity: 0;
+}
+
+li.buzz:hover::after{
+    opacity: 0;
+}
+
+li.fizzBuzz:hover{
+    color:#000;
+}
+
+li.fizz:hover{
+    color:#000;
+}
+
+li.buzz:hover{
+    color:#000;
+}
