@@ -1,0 +1,51 @@
+/*---------- 
+    STYLE
+-----------*/
+
+body{
+    background-color: #083B4C;
+    color: #000;
+}
+
+.default{
+    background-color: #1389B2;
+}
+
+.fizzBuzz{
+    background-color: red;
+}
+
+.fizz{
+    background-color: #0BD6A1;
+}
+
+.buzz{
+    background-color: #FFD166;
+}
+
+h1{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+/*------------ 
+    ELEMENTS
+-------------*/
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    column-gap: 33.33px;
+    row-gap: 40px;
+}
+
+.item {
+    width: 160px;
+    height: 160px;   
+    font-size: 30px;
+    line-height: 160px;
+    text-align: center;
+}
+
